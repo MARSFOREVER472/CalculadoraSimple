@@ -1,4 +1,9 @@
-def sumar2o3Numeros ():
+def sumar2NumerosCualquiera ():
+    global n1, n2
+    n1 = int(input("INGRESE UN NÚMERO: "))
+    n2 = int(input("INGRESE OTRO NÚMERO: "))
+
+def sumar3NumerosCualquiera ():
     global n1, n2, n3
     n1 = int(input("INGRESE UN NÚMERO: "))
     n2 = int(input("INGRESE OTRO NÚMERO: "))
@@ -22,10 +27,10 @@ while True:
     eleccion = int(input())
 
     if eleccion == 1:
-        sumar2o3Numeros()
+        sumar2NumerosCualquiera()
         sumar2Numeros(n1, n2)
     elif eleccion == 2:
-        sumar2o3Numeros()
+        sumar3NumerosCualquiera()
         sumar3Numeros(n1, n2, n3)
     elif eleccion == 3:
         print("HASTA PRONTO!!")
