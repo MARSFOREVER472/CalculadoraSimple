@@ -4,7 +4,7 @@ Este es un proyecto en donde se creó un main para mostrar las funcionalidades d
 
 Con esta calculadora básica consta de 4 operaciones simples de realizar:
 
-- Suma.
+- **Suma.**
 - Resta.
 - Multiplicación.
 - División.
