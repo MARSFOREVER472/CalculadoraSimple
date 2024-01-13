@@ -9,6 +9,6 @@ _Con esta calculadora básica consta de 4 operaciones simples de realizar:_
 - **Multiplicación.**
 - **División.**
 
-Kind regards!
+_Kind regards!_
 
 ***MARSFOREVER472***
