@@ -9,6 +9,6 @@
 - **Multiplicación.**
 - **División.**
 
-_Kind regards!_
+**_Kind regards!_**
 
 ***MARSFOREVER472***
