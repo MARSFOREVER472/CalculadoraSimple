@@ -7,7 +7,7 @@
 - **_Suma._**
 - **_Resta._**
 - **_Multiplicación._**
-- **División.**
+- **_División._**
 
 **_Kind regards!_**
 
