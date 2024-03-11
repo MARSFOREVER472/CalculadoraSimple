@@ -5,7 +5,7 @@
 **_Con esta calculadora básica consta de 4 operaciones muy simples de realizar:_**
 
 - **_Suma._**
-- **Resta.**
+- **_Resta._**
 - **Multiplicación.**
 - **División.**
 
