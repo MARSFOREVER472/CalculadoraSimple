@@ -7,7 +7,7 @@
 - **_Suma (Addition)._**
 - **_Resta (Subtraction)._**
 - **_Multiplicación (Multiplication)._**
-- **_División._**
+- **_División (Division)._**
 
 **_Kind regards!_**
 
