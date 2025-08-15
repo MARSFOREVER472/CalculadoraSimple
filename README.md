@@ -1,4 +1,4 @@
-# CalculadoraSimple
+# _CalculadoraSimple_
 
 **_Este es un proyecto en donde se creó un maravilloso menú principal para mostrar las funcionalidades de una calculadora, más bien la de sumar, restar, multiplicar y dividir varios números en donde sea necesario._**
 
