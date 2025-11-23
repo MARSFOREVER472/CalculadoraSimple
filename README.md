@@ -5,8 +5,11 @@
 ### **_Con esta calculadora básica consta de 4 operaciones muy simples de realizar:_**
 
 - **_Suma (Addition)._**
+  
 - **_Resta (Subtraction)._**
+  
 - **_Multiplicación (Multiplication)._**
+  
 - **_División (Division)._**
 
 **_Kind regards!_**
