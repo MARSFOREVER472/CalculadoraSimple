@@ -2,7 +2,7 @@
 
 **_Este es un proyecto en donde se creó un menú principal para poder mostrar las funcionalidades de una calculadora, más bien la de sumas, restas, multiplicaciones y divisiones entre varios números en donde sea necesario._**
 
-## **_Con esta calculadora básica consta de 4 operaciones muy simples de realizar:_**
+## **_Con esta calculadora básica consta de 4 operaciones muy simples de realizar..._**
 
 - **_Suma (Addition)._**
   
