@@ -4,13 +4,13 @@
 
 ## **_Con esta calculadora básica consta de 4 operaciones muy simples de realizar..._**
 
-- **_Suma (Addition)._**
+- **_Suma (Adición)._**
   
-- **_Resta (Subtraction)._**
+- **_Resta (Sustracción)._**
   
-- **_Multiplicación (Multiplication)._**
+- **_Multiplicación (Multiplicación)._**
   
-- **_División (Division)._**
+- **_División (División)._**
 
 **_Kind regards!_**
 
