@@ -16,7 +16,7 @@
 
 • **_Interfaz gráfica moderna: Estilo oscuro con botones distribuidos en una cuadrícula._**
 
-• Operaciones científicas: Incluye soporte para seno (sin), coseno (cos), tangente (tan), raíz cuadrada (sqrt) y potencia (^).
+• **_Operaciones científicas: Incluye soporte para seno (sin), coseno (cos), tangente (tan), raíz cuadrada (sqrt) y potencia (^)._**
 
 • Manejo de errores: Captura expresiones inválidas mediante un bloque try-except para evitar que la aplicación se cierre inesperadamente.
 
