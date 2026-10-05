@@ -12,7 +12,7 @@
   
 - **_División (División)._**
 
-### Características principales:
+### **_Características principales:_**
 
 • Interfaz gráfica moderna: Estilo oscuro con botones distribuidos en una cuadrícula.
 
