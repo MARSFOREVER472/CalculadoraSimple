@@ -12,6 +12,15 @@
   
 - **_División (División)._**
 
+Características principales:
+
+• Interfaz gráfica moderna: Estilo oscuro con botones distribuidos en una cuadrícula.
+• Operaciones científicas: Incluye soporte para seno (sin), coseno (cos), tangente (tan), raíz cuadrada (sqrt) y potencia (^).
+• Manejo de errores: Captura expresiones inválidas mediante un bloque try-except para evitar que la aplicación se cierre inesperadamente.
+
+Si prefieres una versión por consola (sin interfaz gráfica) o necesitas añadir más funciones matemáticas (como logaritmos o factoriales), dime cómo te gustaría ampliarla.
+
+
 **_Kind regards!_**
 
 **_MARSFOREVER472_**
