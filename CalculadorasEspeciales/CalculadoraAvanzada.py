@@ -29,3 +29,27 @@ class CalculadoraAvanzada:
         def click_boton(self, valor):
             self.ecuacion += str(valor)
             self.entrada_texto.set(self.ecuacion)
+
+        def limpiar(self):
+            self.ecuacion = ""
+            self.pantalla_texto.set("")
+
+        def calcular(self):
+            try:
+                # REEMPLAZOS VISUALES PARA EVALUAR LA EXPRESIÓN DE FORMA SEGURA O DIRECTAMENTE USAR eval() SI SE CONFÍA EN LA ENTRADA DEL USUARIO...
+
+                expresion = (self.ecuacion.replace("×", "*").replace("÷", "/").replace("^", "**"))
+
+                # FUNCIONES CIENTÍFICAS COMUNES USANDO LA FUNCIÓN "math"...
+
+                expresion = expresion.replace("sin(", "math.sin(math.radians(").replace("cos(", "math.cos(math.radians(").replace("tan(", "math.tan(math.radians(").replace("sqrt(", "math.sqrt(")
+
+                # SI ABRIMOS RADIANES CON FUNCIONES TRIGONOMÉTRICAS, AJUSTAMOS PARÉNTESIS EXTRA SI ES NECESARIO...
+                # PARA SIMPLIFICAR EL eval BÁSICO CON FUNCIONES DE math:
+
+                resultado = eval(expresion)
+                self.pantalla_texto.set(str(resultado))
+                self.ecuacion = str(resultado)
+            except Exception:
+                messagebox.showerror("Error", "Operación no válida")
+                self.limpiar()
