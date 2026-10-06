@@ -24,4 +24,8 @@ class CalculadoraAvanzada:
         def crear_pantalla(self):
 
             entrada= tk.Entry(self.root, textvariable=self.entrada_texto, font=("Arial", 22), bg="#333333", fg="#FFFFFF", bd=0, justify="right")
-            entrada.pack(padx=20, pady=20, ippady=10, fill="both")
+            entrada.pack(padx=20, pady=20, ipady=10, fill="both")
+
+        def click_boton(self, valor):
+            self.ecuacion += str(valor)
+            self.entrada_texto.set(self.ecuacion)
