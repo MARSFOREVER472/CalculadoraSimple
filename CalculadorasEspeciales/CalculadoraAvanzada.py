@@ -2,99 +2,116 @@ import math
 import tkinter as tk
 from tkinter import messagebox
 
+
 class CalculadoraAvanzada:
-    def __init__(self, root):
-        self.root = root
-        self.root.title("Calculadora Avanzada")
-        self.root.geometry("400x550")
-        self.root.config(bg="#222222")
-        self.root.resizable(False, False)
 
-        self.ecuacion = ""
-        self.entrada_texto = tk.StringVar()
+  def __init__(self, root):
+    self.root = root
+    self.root.title("Calculadora Avanzada Python")
+    self.root.geometry("350x500")
+    self.root.resizable(False, False)
 
-        # PANTALLA DE VISUALIZACIÓN:
+    self.expresion = ""
+    self.pantalla_texto = tk.StringVar()
 
-        self.crear_pantalla()
+    # Campo de pantalla
+    input_frame = tk.Frame(self.root, width=350, height=80, bg="gray20")
+    input_frame.pack(side=tk.TOP)
 
-        # BOTONES DE LA CALCULADORA:
+    input_field = tk.Entry(
+        input_frame,
+        font=("arial", 20, "bold"),
+        textvariable=self.pantalla_texto,
+        bg="gray85",
+        fg="black",
+        bd=10,
+        insertwidth=4,
+        width=20,
+        justify="right",
+    )
+    input_field.grid(row=0, column=0)
+    input_field.pack(ipady=20)
 
-        self.crear_botones()
+    # Botonera
+    btn_frame = tk.Frame(self.root, width=350, height=420, bg="gray")
+    btn_frame.pack()
 
-        def crear_pantalla(self):
-
-            entrada= tk.Entry(self.root, textvariable=self.entrada_texto, font=("Arial", 22), bg="#333333", fg="#FFFFFF", bd=0, justify="right")
-            entrada.pack(padx=20, pady=20, ipady=10, fill="both")
-
-        def click_boton(self, valor):
-            self.ecuacion += str(valor)
-            self.entrada_texto.set(self.ecuacion)
-
-        def limpiar(self):
-            self.ecuacion = ""
-            self.pantalla_texto.set("")
-
-        def calcular(self):
-            try:
-                # REEMPLAZOS VISUALES PARA EVALUAR LA EXPRESIÓN DE FORMA SEGURA O DIRECTAMENTE USAR eval() SI SE CONFÍA EN LA ENTRADA DEL USUARIO...
-
-                expresion = (self.ecuacion.replace("×", "*").replace("÷", "/").replace("^", "**"))
-
-                # FUNCIONES CIENTÍFICAS COMUNES USANDO LA FUNCIÓN "math"...
-
-                expresion = expresion.replace("sin(", "math.sin(math.radians(").replace("cos(", "math.cos(math.radians(").replace("tan(", "math.tan(math.radians(").replace("sqrt(", "math.sqrt(")
-
-                # SI ABRIMOS RADIANES CON FUNCIONES TRIGONOMÉTRICAS, AJUSTAMOS PARÉNTESIS EXTRA SI ES NECESARIO...
-                # PARA SIMPLIFICAR EL eval BÁSICO CON FUNCIONES DE math:
-
-                resultado = eval(expresion)
-                self.pantalla_texto.set(str(resultado))
-                self.ecuacion = str(resultado)
-            except Exception:
-                messagebox.showerror("Error", "Operación no válida")
-                self.limpiar()
-
-            def crear_botones(self):
-
-                botones = [
-                    ("C", 0, 0),
-                    ("(", 0, 1),
-                    (")", 0, 2),
-                    ("÷", 0, 3),
-                    ("sin", 1, 0),
-                    ("cos", 1, 1),
-                    ("tan", 1, 2),
-        ("×", 1, 3),
-        ("7", 2, 0),
-        ("8", 2, 1),
-        ("9", 2, 2),
-        ("-", 2, 3),
-        ("4", 3, 0),
-        ("5", 3, 1),
-        ("6", 3, 2),
-        ("+", 3, 3),
-        ("1", 4, 0),
-        ("2", 4, 1),
-        ("3", 4, 2),
-        ("=", 4, 3),
-        ("0", 5, 0),
-        (".", 5, 1),
-        ("sqrt", 5, 2),
-        ("^", 5, 3), 
-
-        for texto, fila, col in botones:
-                if texto == "=":
-                    cmd = self.calcular
-                    bg_color = "#ff9800"
-                elif texto == "C":
-                    cmd = self.limpiar
-                    bg_color = "#f44336"
-                else:
-                    cmd = lambda t = texto: self.click_boton(
-                        t + ("(" if t in ["sin", "cos", "tan", "sqrt"] else "")
-                    )
-                    bg_color = "#444444"
-        
-                    b = tk.Button(marco_botones, text = texto, font = ("Arial", 14), bg = bg_color, fg = "#FFFFFF", bd = 0, command = cmd)
-                    b.grid(row = fila, column = col, sticky = "nsew", padx = 3, pady = 3)  
+    # Botones
+    botones = [
+        ("C", 1, 0),
+        ("(", 1, 1),
+        (")", 1, 2),
+        ("/", 1, 3),
+        ("sin", 2, 0),
+        ("cos", 2, 1),
+        ("tan", 2, 2),
+        ("*", 2, 3),
+        ("7", 3, 0),
+        ("8", 3, 1),
+        ("9", 3, 2),
+        ("-", 3, 3),
+        ("4", 4, 0),
+        ("5", 4, 1),
+        ("6", 4, 2),
+        ("+", 4, 3),
+        ("1", 5, 0),
+        ("2", 5, 1),
+        ("3", 5, 2),
+        ("√", 5, 3),
+        ("0", 6, 0),
+        (".", 6, 1),
+        ("**", 6, 2),
+        ("=", 6, 3),
     ]
+
+    for texto, fila, col in botones:
+      btn = tk.Button(
+          btn_frame,
+          text=texto,
+          fg="black",
+          width=7,
+          height=3,
+          bd=1,
+          bg="white",
+          command=lambda t=texto: self.clic_boton(t),
+      )
+      btn.grid(row=fila, column=col)
+
+  def clic_boton(self, char):
+    if char == "C":
+      self.expresion = ""
+      self.pantalla_texto.set("")
+    elif char == "=":
+      try:
+        # Reemplazar símbolos para que Python los entienda
+        exp_eval = self.expresion.replace("√", "math.sqrt")
+        resultado = str(eval(exp_eval))
+        self.pantalla_texto.set(resultado)
+        self.expresion = resultado
+      except Exception:
+        messagebox.showerror("Error", "Operación no válida")
+        self.expresion = ""
+        self.pantalla_texto.set("")
+    elif char in ["sin", "cos", "tan"]:
+      try:
+        val = float(self.expresion)
+        if char == "sin":
+          res = math.sin(math.radians(val))
+        elif char == "cos":
+          res = math.cos(math.radians(val))
+        elif char == "tan":
+          res = math.tan(math.radians(val))
+        self.pantalla_texto.set(str(res))
+        self.expresion = str(res)
+      except Exception:
+        messagebox.showerror("Error", "Valor inválido para función trigonométrica")
+    else:
+      self.expresion += str(char)
+      self.pantalla_texto.set(self.expresion)
+
+
+if __name__ == "__main__":
+  ventana = tk.Tk()
+  app = CalculadoraAvanzada(ventana)
+  ventana.mainloop()
+
