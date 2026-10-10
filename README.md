@@ -18,7 +18,7 @@
 
 • **_Operaciones científicas: Incluye soporte para seno (sin), coseno (cos), tangente (tan), raíz cuadrada (sqrt) y potencia (^)._**
 
-• **_Manejo de errores: Captura expresiones inválidas mediante un bloque try-except para evitar que la aplicación se cierre inesperadamente._**
+• **_Manejo de errores: Captura expresiones inválidas mediante un bloque ```try-except``` para evitar que la aplicación se cierre inesperadamente._**
 
 **_Si prefieres una versión por consola o necesitas añadir más funciones matemáticas, dime cómo te gustaría ampliarla._**
 
