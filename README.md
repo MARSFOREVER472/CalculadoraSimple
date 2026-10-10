@@ -20,7 +20,7 @@
 
 • **_Manejo de errores: Captura expresiones inválidas mediante un bloque try-except para evitar que la aplicación se cierre inesperadamente._**
 
-**_Si prefieres una versión por consola o necesitas añadir más funciones matemáticas (como logaritmos o factoriales), dime cómo te gustaría ampliarla._**
+**_Si prefieres una versión por consola o necesitas añadir más funciones matemáticas, dime cómo te gustaría ampliarla._**
 
 **_Kind regards!_**
 
