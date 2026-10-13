@@ -33,7 +33,7 @@ class CalculadoraAvanzada:
     input_field.pack(ipady=20)
 
     # Botonera
-    btn_frame = tk.Frame(self.root, width=350, height=420, bg="gray")
+    btn_frame = tk.Frame(self.root, width=400, height=500, bg="gray")
     btn_frame.pack()
 
     # Botones
