@@ -8,7 +8,7 @@ class CalculadoraAvanzada:
   def __init__(self, root):
     self.root = root
     self.root.title("Calculadora Avanzada Python")
-    self.root.geometry("350x500")
+    self.root.geometry("350x450")
     self.root.resizable(False, False)
 
     self.expresion = ""
@@ -89,7 +89,7 @@ class CalculadoraAvanzada:
         self.pantalla_texto.set(resultado)
         self.expresion = resultado
       except Exception:
-        messagebox.showerror("Error", "Operación no válida")
+        messagebox.showerror("Error", "Operación Inválida")
         self.expresion = ""
         self.pantalla_texto.set("")
     elif char in ["sin", "cos", "tan"]:
