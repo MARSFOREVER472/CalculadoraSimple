@@ -7,7 +7,7 @@ class CalculadoraAvanzada:
 
   def __init__(self, root):
     self.root = root
-    self.root.title("Calculadora Avanzada Python")
+    self.root.title("Calculadora Avanzada")
     self.root.geometry("350x450")
     self.root.resizable(False, False)
 
@@ -15,7 +15,7 @@ class CalculadoraAvanzada:
     self.pantalla_texto = tk.StringVar()
 
     # Campo de pantalla
-    input_frame = tk.Frame(self.root, width=350, height=80, bg="gray20")
+    input_frame = tk.Frame(self.root, width=350, height=80, bg="green")
     input_frame.pack(side=tk.TOP)
 
     input_field = tk.Entry(
