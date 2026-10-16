@@ -14,7 +14,7 @@
 
 ### **_Características principales:_**
 
-• **_Interfaz gráfica moderna: Estilo oscuro con botones distribuidos en una cuadrícula._**
+• **_Interfaz gráfica moderna: Estilo oscuro con botones distribuidos mediante una cuadrícula._**
 
 • **_Operaciones científicas: Incluye soporte para seno (```sin```), coseno (```cos```), tangente (```tan```), raíz cuadrada (```sqrt```) y potencia (```^```)._**
 
