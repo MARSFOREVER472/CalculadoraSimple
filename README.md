@@ -20,8 +20,6 @@
 
 • **_Manejo de errores: Captura expresiones inválidas mediante un bloque ```try-except``` para evitar que la aplicación se cierre inesperadamente._**
 
-
-
 **_Kind regards!_**
 
 **_MARSFOREVER472_**
