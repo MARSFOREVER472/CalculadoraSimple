@@ -15,3 +15,13 @@ def calculadora():
         if opcion == "4":
             print("¡HASTA PRONTO!")
             break
+
+        if opcion in ["1", "2", "3"]:
+            try:
+
+                num1 = float(input("Ingrese el valor 1: "))
+                num2 = float(input("Ingrese el valor 2: "))
+
+            except ValueError:
+                print("Por favor, introduce un número válido.")
+                continue
