@@ -10,7 +10,7 @@ def show_menu():
 def calculadora():
     while True:
         show_menu()
-        opcion = input("\nElige una opción del 1 al 10: ")
+        opcion = input("\nElige una opción del 1 al 4: ")
 
         if opcion == "4":
             print("¡HASTA PRONTO!")
