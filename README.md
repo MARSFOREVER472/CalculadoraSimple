@@ -1,6 +1,6 @@
 # _CalculadoraSimple_
 
-**_Este es un proyecto en donde específicamente se crea un menú principal para poder visualizar las funcionalidades de una calculadora, más bien la de sumar, restar, multiplicar y dividir entre varios números en las que sea necesario._**
+**_Este es un proyecto en donde específicamente se crea un menú principal para poder visualizar las funcionalidades de una calculadora, más bien la de sumar, restar, multiplicar y/o dividir entre varios números en las que sea necesario._**
 
 ## **_Con esta calculadora básica consta de 4 operaciones muy sencillas de realizar..._**
 
